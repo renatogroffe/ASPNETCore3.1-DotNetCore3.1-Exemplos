@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  apicontagem:
+    image: apicontagem-3-1
+    build:
+      context: .
+    environment:
+      - TesteAmbiente=Teste via Docker Compose - XP
+    ports:
+      - "10000:80"
